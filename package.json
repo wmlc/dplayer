@@ -14,7 +14,7 @@
     "dist"
   ],
   "repository": {
-    "url": "git+https://github.com/DIYgod/DPlayer.git",
+    "url": "git+https://github.com/1290800466/dplayer.git",
     "type": "git"
   },
   "keywords": [
@@ -26,9 +26,9 @@
   "author": "DIYgod",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DIYgod/DPlayer/issues"
+    "url": "https://github.com/1290800466/dplayer.git"
   },
-  "homepage": "https://github.com/DIYgod/DPlayer#readme",
+  "homepage": "https://github.com/1290800466/dplayer.git#readme",
   "devDependencies": {
     "art-template": "4.12.2",
     "art-template-loader": "1.4.3",
@@ -55,7 +55,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.19.0",
     "balloon-css": "^0.5.0",
     "mini-css-extract-plugin": "0.4.0",
     "promise-polyfill": "8.0.0",
