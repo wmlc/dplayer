@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../dist/DPlayer.min.css">
+    <style type="text/css">
+        body, html, .dplayer {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            color: #aaa;
+            background-color: #000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div id="dplayer"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+<script src="../dist/DPlayer.min.js"></script>
+<script>
+    var vurl = window.location.href.split("v=")[1];
+    const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        live: false,
+        danmaku: false,
+        autoplay: true,
+        loop: true,
+        video: {
+            url: vurl,
+            type: 'hls'
+        }
+    });
+</script>
+</html>
+
+
+
+
+
+
+
