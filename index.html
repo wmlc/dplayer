@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../dist/DPlayer.min.css">
+    <link rel="stylesheet" href="dist/DPlayer.min.css">
     <style type="text/css">
         body, html, .dplayer {
             padding: 0;
@@ -22,8 +22,8 @@
 <body>
 <div id="dplayer"></div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
-<script src="../dist/DPlayer.min.js"></script>
+<script src="dist/hls.min.js"></script>
+<script src="dist/DPlayer.min.js"></script>
 <script>
     var vurl = window.location.href.split("v=")[1];
     const dp = new DPlayer({
@@ -35,7 +35,7 @@
         video: {
             url: vurl,
             type: 'hls'
-        }
+        },
     });
 </script>
 </html>
