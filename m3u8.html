@@ -22,7 +22,7 @@
     <script src="dist/DPlayer.min.js"></script>
     <link rel="stylesheet" href="dist/DPlayer.min.css">
 </head>
-<body>
+<body onload="play()">
 <div id="dplayer"></div>
 </body>
 
@@ -37,13 +37,17 @@
         screenshot: true,
         hotkey: true,
         preload: 'auto',
-        mutex:true,
         // logo:'http://www.zhuijuwu.com/favicon.ico',
         video: {
             url: vurl,
             type: 'hls'
         }
     });
+
+    function play() {
+        dp.play();
+    }
+
 </script>
 </html>
 
